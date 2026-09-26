@@ -1,0 +1,32 @@
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { background: #f7f7f2; }
+body { margin: 0; color: #1b1b1b; font: 18px/1.6 Georgia, "Songti SC", "Noto Serif CJK SC", serif; }
+a { color: #163baf; text-decoration: underline; text-underline-offset: 2px; }
+a:visited { color: #5b288f; }
+a:focus-visible { outline: 2px solid #163baf; outline-offset: 3px; }
+.page { width: min(100% - 32px, 740px); margin: 28px auto 60px; }
+.topline, .small, nav, .download, footer { font-family: "Courier New", Courier, monospace; }
+.topline { border-top: 2px solid #1b1b1b; border-bottom: 1px solid #1b1b1b; padding: 7px 0; font-size: 14px; letter-spacing: .03em; }
+.topline span { float: right; }
+h1 { margin: 48px 0 0; font-size: clamp(44px, 12vw, 82px); line-height: 1; font-weight: normal; letter-spacing: -.07em; }
+.subtitle { margin: 12px 0 34px; font: 16px/1.5 "Courier New", Courier, monospace; }
+nav span[aria-current] { font-weight: bold; }
+hr { border: 0; border-top: 1px solid #8b8b82; margin: 33px 0; }
+h2 { margin: 0 0 14px; font: bold 17px/1.4 "Courier New", Courier, monospace; text-transform: uppercase; letter-spacing: .06em; }
+p { margin: 0 0 16px; max-width: 62ch; }
+.lead { font-size: 22px; line-height: 1.5; }
+.download { padding: 18px 20px; border: 1px solid #1b1b1b; background: #fff; }
+.download strong { display: block; font-size: 18px; }
+.download p { margin: 6px 0 0; font-size: 14px; line-height: 1.55; }
+.download .status { color: #545454; }
+.small { color: #535353; font-size: 14px; line-height: 1.6; }
+footer { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px 24px; margin-top: 48px; padding-top: 12px; border-top: 1px solid #8b8b82; font-size: 13px; color: #4f4f4f; }
+footer .contact { white-space: nowrap; }
+footer nav { display: flex; gap: 12px; white-space: nowrap; }
+@media (max-width: 480px) {
+  .page { margin-top: 12px; }
+  .topline span { float: none; display: block; }
+  h1 { margin-top: 32px; }
+  .lead { font-size: 20px; }
+}
